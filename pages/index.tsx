@@ -70,13 +70,13 @@ const Home: NextPage = () => {
   return (
     <div className='flex flex-col items-center justify-center max-w-5xl min-h-screen py-2 mx-auto'>
       <Head>
-        <title>Text Summarizer</title>
+        <title>TLDR?</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
       <Header />
       <main className='flex flex-col items-center justify-center flex-1 w-full px-4 mt-12 text-center sm:mt-20'>
-        <a
+        {/* <a
           className='flex items-center justify-center px-4 py-2 mb-5 space-x-2 text-sm text-gray-600 transition-colors bg-white border border-gray-300 rounded-full shadow-md max-w-fit hover:bg-gray-100'
           href='https://github.com/ryarturogi/text-sumarizer'
           target='_blank'
@@ -84,17 +84,23 @@ const Home: NextPage = () => {
         >
           <Github />
           <p>Star on GitHub</p>
-        </a>
-        <h1 className='max-w-2xl text-4xl font-bold sm:text-6xl text-slate-900'>
-          Generate a summary from a text in seconds.
+        </a> */}
+        
+        <h1> <span className='max-w-2xl text-xl font-bold sm:text-6xl text-slate-900'>
+          Summarize your </span>
+          <span className='max-w-2xl text-xl font-bold sm:text-6xl text-amber-500'>
+          reeeeally </span>
+          <span className='max-w-2xl text-xl font-bold sm:text-6xl text-slate-900'>
+          long text </span>
         </h1>
-        <div className='w-full max-w-xl'>
+        
+        <div className='w-full max-w-xl space-y-10'>
           <div className='flex items-center mt-10 space-x-3'>
             <div className='flex items-center justify-center w-12 h-10 text-sm text-white bg-black rounded-full'>
               <p>1</p>
             </div>
             <p className='font-medium text-left'>
-              Copy current summary{' '}
+              CTRL+V your text{' '}
               <span className='text-slate-500'>
                 (or write a few sentences about the topic you want to write
                 about)
@@ -108,7 +114,7 @@ const Home: NextPage = () => {
             rows={4}
             className='w-full my-5 border-gray-300 rounded-md shadow-sm focus:border-black focus:ring-black'
             placeholder={
-              'e.g. Senior Developer Advocate @vercel. Tweeting about web development, AI, and React / Next.js. Writing nutlope.substack.com.'
+              'e.g time is a social construct but so are human beings and life is all but a box'
             }
           />
           <div className='flex items-center mb-5 space-x-3'>

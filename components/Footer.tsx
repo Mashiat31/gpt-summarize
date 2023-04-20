@@ -3,12 +3,12 @@ import Link from 'next/link'
 export default function Footer() {
   return (
     <footer className='flex flex-col items-center justify-between w-full h-16 px-3 pt-4 mt-5 mb-3 space-y-3 text-center border-t sm:h-20 sm:pt-2 sm:flex-row sm:mb-0'>
-      <div>TextSummarizer.ai</div>
+      <div>TLDR? No More.</div>
       <div className='flex pb-4 space-x-4 sm:pb-0'>
         <Link
-          href='https://twitter.com/RyArturoGI'
+          href='https://twitter.com/mashiatlamisa'
           className='group'
-          aria-label='TaxPal on Twitter'
+          aria-label='Mashiat on Twitter'
         >
           <svg
             aria-hidden='true'
@@ -18,9 +18,9 @@ export default function Footer() {
           </svg>
         </Link>
         <Link
-          href='https://github.com/ryaturogi/text-summarizer'
+          href='https://github.com/Mashiat31'
           className='group'
-          aria-label='RyArturoGI on GitHub'
+          aria-label='Mashiat on GitHub'
         >
           <svg
             aria-hidden='true'
