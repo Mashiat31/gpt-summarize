@@ -4,7 +4,11 @@ export default function Footer() {
   return (
     <footer className='flex flex-col items-center justify-between w-full h-16 px-3 pt-4 mt-5 mb-3 space-y-3 text-center border-t sm:h-20 sm:pt-2 sm:flex-row sm:mb-0'>
       <div>TLDR? No More.</div>
-      <div>Created by Mashiat</div>
+      <div> Made by <Link
+          href='https://mashiat.live/'
+          className='group'
+          aria-label='Mashiat site'
+        ><span className="font-underline">Mashiat</span></Link></div>
       <div className='flex pb-4 space-x-4 sm:pb-0'>
         <Link
           href='https://twitter.com/mashiatlamisa'
